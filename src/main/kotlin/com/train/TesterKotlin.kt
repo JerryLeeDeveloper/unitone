@@ -3,10 +3,11 @@ package com.train
 import java.util.*
 
 fun main() {
-    Ticket(Scanner(System.`in`)).continuous()
+    Ticket().continuous()
 }
 
-class Ticket(private val scan: Scanner){
+class Ticket {
+    private val scan = Scanner(System.`in`)
     private val singleTrip = 1000
     private val roundTrip = 2000*0.9
     private val exit = -1
